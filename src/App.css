@@ -1,38 +1,143 @@
-.App {
+html {
+  font-size: 16px;
+  background: #45b1dcb8;
+}
+.Head{
+  background: #FFF;
+  height: 100px;
+  font-size: large;
+  font-weight: bold;
+  border: 1px solid black;
+  padding-left: 15%;
+
+}
+h3{
+  text-decoration-line: underline;   
+}
+.TaskTitleh3{
+  margin-left: 25%;
+  color: #FFF;
+}
+.sidebar{
+  position: fixed;
+  width: 20%;
+  height: 100vh;
+  background: #5d6d70c7;
+}
+.taskInput{
+   margin-top: 8%;
+  width: 70%;
+  height: 40px;
   text-align: center;
+  border-radius: 5px;
+  border-color: black;
+}
+.btn1{
+  margin-left: 5px;
+  height: 45px;
+  background-color: white;
+  border-radius: 5px;
+  width: 20%;
+}
+.Show-list{
+display: flex;
+column-gap: 21px;
+
+}
+.list{
+  margin-top: 5%;
+  margin-left: 4%;
+  padding: 4px;
+  width: 60%;
+  height: 26px;
+  text-align: center;
+  border-radius: 5px;
+  border:2px solid black;
+  background-color: #FFF;
+  font-family:Georgia, 'Times New Roman', Times, serif ;
+}
+.list:active{
+  background:aqua;
+}
+.delete-list-btn{
+  margin-top: 5%;
+  margin-left: 5px;
+  padding: 3px;
+  height: 37px;
+  background-color: white;
+  border-radius: 5px;
+  width: 15%;
+  border:2px solid black;
+}
+.delete-list-btn:active{
+  background:red;
+}
+.delete-btn2:active{
+  background:red;
+}
+.mainTodoList{
+width: 75%;
+float: right;
+}
+header{
+  margin-left: 40%;
+}
+.TodosSection{
+  margin: 45px 200px;
+  background-color: #ffffff;
+  padding: 30px 20px;
+  border-radius: 5px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+  width: 50%;
+}
+.TodosSection input {
+  width: 70%;
+  height: 15px;
+  font-family: 'Poppins',sans-serif;
+  font-size: 15px;
+  border: 2px solid #d1d3d4;
+  padding: 12px;
+  color: #111111;
+  font-weight: 500;
+  position: relative;
+  border-radius: 5px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.TodosSection button {
+    float: right;
+    width: 20%;
+    height: 42px;
+    border-radius: 5px;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    background-color: #1e84c0cf;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    outline: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.todo-show {
+  margin: 15px 200px;
+  background-color: #ffffff;
+  padding: 15px 20px;
+  border-radius: 5px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+  width: 50%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  column-gap: 74%;
 }
-
-.App-link {
-  color: #61dafb;
+.todo-btn{
+  display: flex;
+  column-gap: 40%;
+  margin-left: 30.5%;
+  position: absolute;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todo-name{
+padding-left: 2%;
+}
+.completed-task{
+  font-weight: 50;
 }
